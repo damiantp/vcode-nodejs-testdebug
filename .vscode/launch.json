@@ -1,0 +1,60 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceRoot}/app.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "externalConsole": false,
+            "sourceMaps": true,
+            "outDir": "${workspaceRoot}"
+        },
+        {
+            "name": "Attach LOCALHOST",
+            "type": "node",
+            "request": "attach",
+            "port": 5858,
+            "address": "localhost",
+            "restart": false,
+            "sourceMaps": true,
+            "outDir": "${workspaceRoot}",
+            "localRoot": "${workspaceRoot}",
+            "remoteRoot": "C:/desarrollo/testing/nodejs/vcode-nodejs-testdebug"  // <<-- Setup custom path
+        },
+        {
+            "name": "Attach REMOTE",
+            "type": "node",
+            "request": "attach",
+            "port": 5858,
+            "address": "192.168.1.22",   // <<-- Setup custom IP
+            "restart": false,
+            "sourceMaps": true,
+            "outDir": "${workspaceRoot}/",
+            "localRoot": "${workspaceRoot}",
+            "remoteRoot": "/var/apps/nodejs/vcode-nodejs-testdebug" // <<-- Setup custom path
+        },
+        {
+            "name": "Attach REMOTE JS",
+            "type": "node",
+            "request": "attach",
+            "port": 5858,
+            "address": "192.168.1.22", // <<-- Setup custom IP
+            "restart": false,
+            "sourceMaps": false,
+            "localRoot": "${workspaceRoot}",
+            "remoteRoot": "/var/apps/nodejs/vcode-nodejs-testdebug" // <<-- Setup custom path
+        }          
+    ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "vcode-nodejs-testdebug",
+  "version": "1.0.0",
+  "description": "Test typescript remote degugging with VCode",
+  "main": "app.js",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
